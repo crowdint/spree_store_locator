@@ -1,0 +1,10 @@
+%table#stores
+  %thead
+    %tr
+      %th Name
+      %th City
+      %th State
+      %th.actions
+  %tbody
+    = render partial: 'store', collection: @stores
+

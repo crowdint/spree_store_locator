@@ -1,0 +1,14 @@
+= form_for @store, url: admin_stores_path do |f|
+  %fieldset
+    %legend{ align: 'center' } New Store
+    = render partial: 'form', locals: { f: f }
+
+= paginate @stores
+
+- if @stores.present?
+  = render partial: 'stores'
+- else
+  .no-objects-found No Stores found!
+
+= paginate @stores
+

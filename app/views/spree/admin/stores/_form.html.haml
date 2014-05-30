@@ -1,0 +1,53 @@
+.row
+  .four.columns.alpha
+    = f.field_container :name do
+      = f.label :name, 'Name'
+      = f.text_field :name, class: 'fullwidth title'
+      = f.error_message_on :name
+  .four.columns
+    = f.field_container :address1 do
+      = f.label :address1, 'Address'
+      = f.text_field :address1, class: 'fullwidth title'
+      = f.error_message_on :address1
+  .four.columns
+    = f.field_container :address2 do
+      = f.label :address2, 'Address 2'
+      = f.text_field :address2, class: 'fullwidth title'
+      = f.error_message_on :address2
+  .four.columns.omega
+    = f.field_container :city do
+      = f.label :city, 'City'
+      = f.text_field :city, class: 'fullwidth title'
+      = f.error_message_on :city
+
+.row
+  .four.columns.alpha
+    = f.field_container :state do
+      = f.label :state, 'State'
+      = f.text_field :state, class: 'fullwidth title'
+      = f.error_message_on :state
+  .four.columns
+    = f.field_container :country do
+      = f.label :country, 'Country'
+      = f.text_field :country, class: 'fullwidth title'
+      = f.error_message_on :country
+  .four.columns.omega
+    = f.field_container :zip do
+      = f.label :zip, 'Zip'
+      = f.text_field :zip, class: 'fullwidth title'
+      = f.error_message_on :zip
+.row
+  .four.columns.alpha
+    = f.field_container :website do
+      = f.label :website, 'Website'
+      = f.text_field :website, class: 'fullwidth title'
+      = f.error_message_on :website
+  .four.columns.omega
+    = f.field_container :phone do
+      = f.label :phone, 'Phone'
+      = f.text_field :phone, class: 'fullwidth title'
+      = f.error_message_on :phone
+
+.form-buttons.filter-actions.actions
+  %button.icon-ok.button{ name: 'button', type: 'submit' }= (action_name == 'edit' ? 'Edit' : 'Create')
+

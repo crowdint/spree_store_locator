@@ -1,0 +1,5 @@
+= form_for @store, url: admin_store_path, method: :patch do |f|
+  %fieldset
+    %legend{ align: 'center' } Edit Store
+    = render partial: 'form', locals: { f: f }
+

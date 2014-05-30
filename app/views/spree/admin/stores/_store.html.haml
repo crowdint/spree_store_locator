@@ -1,0 +1,9 @@
+%tr
+  %td= store.name
+  %td= store.city
+  %td= store.state
+  %td.actions
+    = link_to_edit store, url: edit_admin_store_path(store.id), no_text: true, class: 'edit'
+    &nbsp;
+    = link_to_delete store, url: admin_store_path(store.id), no_text: true, method: 'delete'
+
