@@ -1,0 +1,17 @@
+#store-locator-container
+  #page-header
+    %h1 Using Chipotle as an Example
+    %p
+      I used locations around Minneapolis and the southwest suburbs. So, for example, Edina, Plymouth, Eden Prarie, etc. would be good for testing the functionality.
+      You can use just the city as the address - ex: Edina, MN.
+  #form-container
+    %form#user-location{action: "#", method: "post"}
+      #form-input
+        %label{for: "address"} Enter Address or Zip Code:
+        %input#address{name: "address", type: "text"}/
+      %button#submit{type: "submit"} Submit
+  #map-container
+    #loc-list
+      %ul#list
+    #map
+
