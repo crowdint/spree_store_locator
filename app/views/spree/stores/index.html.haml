@@ -1,9 +1,6 @@
 #store-locator-container
   #page-header
-    %h1 Using Chipotle as an Example
-    %p
-      I used locations around Minneapolis and the southwest suburbs. So, for example, Edina, Plymouth, Eden Prarie, etc. would be good for testing the functionality.
-      You can use just the city as the address - ex: Edina, MN.
+    %h2 Store Locator
   #form-container
     %form#user-location{action: "#", method: "post"}
       #form-input
@@ -14,4 +11,16 @@
     #loc-list
       %ul#list
     #map
+
+= javascript_include_tag 'spree/frontend/lib/handlebars-1.0.0'
+= javascript_include_tag 'http://maps.google.com/maps/api/js?sensor=false'
+= javascript_include_tag 'spree/frontend/lib/jquery.storelocator'
+
+:coffeescript
+
+  $ ->
+    $('#map-container').storeLocator(
+      dataType: 'json'
+      dataLocation: '/store_locator.json'
+    )
 
