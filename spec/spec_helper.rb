@@ -43,6 +43,7 @@ RSpec.configure do |config|
   # current_path.should eql(spree.products_path)
   config.include Spree::TestingSupport::UrlHelpers
   config.include Spree::TestingSupport::ControllerRequests
+  config.include Devise::TestHelpers, type: :controller
 
   # == Mock Framework
   #
