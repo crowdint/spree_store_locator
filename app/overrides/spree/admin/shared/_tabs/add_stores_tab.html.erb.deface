@@ -1,4 +1,0 @@
-<!-- insert_after "erb[silent]:contains('if can? :admin, Spree::Promotion')" -->
-
-<%= tab :stores, icon: 'map-marker', url: admin_stores_path %>
-
