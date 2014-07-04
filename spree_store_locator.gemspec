@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_store_locator'
   s.version     = '2.2.1'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'A Store Locator for your Spree Store'
+  s.description = 'Show your customer where do you sell easily'
   s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+   s.author    = 'Eduardo Figarola'
+   s.email     = 'eduardo.figarola@crowdint.com'
+   s.homepage  = 'http://crowdint.com'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
