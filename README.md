@@ -80,5 +80,8 @@ Contributing
 Pull Requests are more than welcome!. If needed, make sure you add
 tests :)
 
-Copyright (c) 2014 [name of extension creator], released under the New BSD License
+About the Author
+----------------
+
+Crowd Interactive is an American web design and development company that happens to work in Colima, Mexico. We specialize in building and growing online retail stores. We don’t work with everyone – just companies we believe in. Call us today to see if there’s a fit.
 
